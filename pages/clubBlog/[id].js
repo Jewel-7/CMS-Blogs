@@ -1,10 +1,14 @@
 import EachCard from "../../component/Card";
 import url from "../../services/apiCall";
-
+import Navigation from "../../component/Navigation";
+import styles from "../../styles/blog.module.css";
+import Footer from "../../component/Footer";
 function profile(props) {
   return (
-    <div>
+    <div className={styles["blog"]}>
+      <Navigation />
       <EachCard {...props.blog} />
+      <Footer />
     </div>
   );
 }
@@ -18,7 +22,7 @@ export const getStaticProps = async (context) => {
         blog: blog,
       },
     };
-  } catch (errpr) {
+  } catch (error) {
     console.log(error);
     return error;
   }

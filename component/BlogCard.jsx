@@ -1,15 +1,17 @@
 import Link from "next/link";
+import styles from "../styles/index.module.css";
 function BlogCard(props) {
-  //   let { heading, image, content, uid } = props;
   return (
-    <div>
-      <img src={props.image.url} alt={props.image.title} />
+    <div className={styles["index-border"]}>
+      <img
+        className={styles["index-image"]}
+        src={props.image.url}
+        alt={props.image.title}
+      />
 
       <Link href={`/clubBlog/${props.uid}`}>
-        <h1>{props.heading}</h1>
+        <h1 className={styles["index-heading"]}>{props.heading}</h1>
       </Link>
-
-      <p>{props.content}</p>
     </div>
   );
 }
