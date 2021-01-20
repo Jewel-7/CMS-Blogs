@@ -1,4 +1,19 @@
+Simple Blog-Rendering Website Made by using Next And ContentStack
 
+It consits of a Home Page With Navbar And footer
+
+Navbar consists navlink to navigate back to Home
+
+Home page consists of Tiles or Card of Each Blog , ON clicking it a whole web page for blog opens up
+
+Related links can be used to render blogs
+
+Data is fetched with the help of Contentstack Management System 
+
+In Cms Content Type for blogs where created and the data is fetched from The Content Type
+
+
+## Live Link
 https://cms-backend-blogs.vercel.app/
 
 
